@@ -13,7 +13,7 @@ class ReplyController extends Controller
      */
     public function index()
     {
-        //
+        return Reply::all();
     }
 
     /**
@@ -37,7 +37,7 @@ class ReplyController extends Controller
      */
     public function show(Reply $reply)
     {
-        //
+        return $reply;
     }
 
     /**

@@ -13,7 +13,7 @@ class ReactionController extends Controller
      */
     public function index()
     {
-        //
+        return Reaction::all();
     }
 
     /**
@@ -37,7 +37,7 @@ class ReactionController extends Controller
      */
     public function show(Reaction $reaction)
     {
-        //
+        return $reaction;
     }
 
     /**
