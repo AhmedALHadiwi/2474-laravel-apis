@@ -29,7 +29,7 @@ class ReplyController extends Controller
      */
     public function store(StoreReplyRequest $request)
     {
-        //
+        return $request;
     }
 
     /**

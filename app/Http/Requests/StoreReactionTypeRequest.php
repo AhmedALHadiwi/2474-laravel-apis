@@ -22,7 +22,7 @@ class StoreReactionTypeRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'type'=> 'in:Like,Love,Care,Happy,Sad,Laugh'
         ];
     }
 }

@@ -18,7 +18,7 @@ Route::get('users', function () {
 Route::resource('users', UserController::class);
 
 //Reaction Type
-Route::resource('reaction_type',ReactionTypeController::class);
+Route::resource('reaction_types',ReactionTypeController::class);
 
 //Post Statue
 Route::resource('post_status',PostStatusController::class);

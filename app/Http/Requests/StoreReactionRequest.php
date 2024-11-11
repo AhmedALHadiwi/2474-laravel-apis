@@ -11,7 +11,7 @@ class StoreReactionRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -22,7 +22,9 @@ class StoreReactionRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'post_id'=>'required|exists:posts,id',
+            'user_id'=>'required|exists:users,id',
+            'reaction_type_id'=>'required|exists:reaction_types,id',
         ];
     }
 }

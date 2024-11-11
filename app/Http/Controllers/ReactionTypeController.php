@@ -29,7 +29,7 @@ class ReactionTypeController extends Controller
      */
     public function store(StoreReactionTypeRequest $request)
     {
-        //
+        return $request;
     }
 
     /**
